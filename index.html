@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Scrolling Parallax Effect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/animate.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="title">jQuery Lazyload, wow.js and animate.css scrolling lazy load images.</div>
+    <div class="lazyload">
+      <div class="images">
+        <img class="lazy wow animated fadeIn" data-src="./assets/imgs/photo1.jpg" />
+        <img class="lazy wow animated fadeInUp" data-src="./assets/imgs/photo2.jpg" />
+        <img class="lazy wow animated fadeInLeft" data-wow-offset="100" data-src="./assets/imgs/photo3.jpg" />
+        <img class="lazy wow animated fadeInRight" data-wow-offset="100" data-src="./assets/imgs/photo4.jpg" />
+        <img class="lazy wow animated swing" data-wow-offset="100" data-src="./assets/imgs/photo5.jpg" />
+        <img class="lazy wow animated bounceInUp" data-wow-offset="100" data-src="./assets/imgs/photo6.jpg" />
+        <img class="lazy wow animated flipInX" data-wow-offset="100" data-src="./assets/imgs/photo7.jpg" />
+        <img class="lazy wow animated flipInY" data-wow-offset="100" data-src="./assets/imgs/photo8.jpg" />
+        <img class="lazy wow animated zoomIn" data-wow-offset="100" data-src="./assets/imgs/photo9.jpg" />
+        <img class="lazy wow animated jackInTheBox" data-wow-offset="100" data-src="./assets/imgs/photo10.jpg" />
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="./assets/js/jquery.lazy.min.js"></script>
+  <script src="./assets/js/wow.min.js"></script>
+  <script>
+    $(function () {
+      new WOW().init();
+      $('.lazy').Lazy();
+    })
+  </script>
+</body>
+
+</html>
