@@ -1,1 +1,1 @@
-# jquery-lazyload-wowjs-and-animatecss
+# jQuery lazyload wow.js and animate.css
